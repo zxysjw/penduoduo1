@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<!-- 设置轮播图的属性 -->
+<swiper autoplay indicator-dots interval="1000" circular wx:key="id" class="swiper">
+<!-- 进行循环输出轮播图 -->
+<block  wx:for="{{image}}" wx:key="id">
+<!-- 通过循环 输出网络请求中获得的轮播图数据 图片 -->
+<swiper-item><image mode="widthFix" src="{{item.image_src}}" class="swiper-item-image"></image></swiper-item>
+</block>
+
+</swiper>
+
+<!-- 拼小圈部分 -->
+<view class="pinxioaquan">
+<!-- 弹性盒子  -->
+<view class="flex-item pinxioaquantext">
+<image class=" nichengimage flex-item" mode="widthFix" style="margin-top: 10rpx;" src="//i2.hdslb.com/bfs/face/1c4e58768011dd9eaec4f688f406302099f2f832.jpg@87w_88h_1c_100q.webp"/>
+
+<text style="margin-left: 20rpx;">拼小圈</text>
+
+</view>
+<image class="flex-item nichengimage" mode="widthFix"
+ src="//i2.hdslb.com/bfs/face/1c4e58768011dd9eaec4f688f406302099f2f832.jpg@87w_88h_1c_100q.webp"/>
+<text class="flex-item dongtai"decode> {{nicheng}}&nbsp;有新动态 &nbsp;></text>
+</view>
+
+<!-- 宫格部分 -->
+ <view class="gongge">
+ <!-- 通过循环网络请求获得的数据进行输出图片和文字 -->
+ <block wx:for="{{gongge}}" wx:key="id">
+ <view class="flex-item gonggeitem ">
+ <image class="gonggeimage" src="{{item.nav_src}}" mode="widthFix"></image>
+ <text class="gonggetext">{{item.nav_name}}</text>
+ </view>
+ </block>
+ </view>
+ <!-- 百亿补贴 -->
+ <view class="baiyibutie">
+ <view class="baiyibutietop">
+ <view> <text class="baiyibutiebiaoti">百亿补贴</text></view>
+<text decode class="baitop">大牌正品&nbsp;官方补贴</text>
+<text decode class="quanbu">全部&nbsp;></text>
+ </view>
+<!-- 百亿补贴 图片部分 -->
+ <view class="hezi" >
+<view class="flex-item heziitem" wx:for="{{baiyibutie}}" wx:key="id"  >
+<image  src="{{item.goods_src}}" mode="widthFix"/>
+<text class="baiyibutietext">{{item.goods_sub}}</text>
+</view>
+</view>
+ </view>
+<!-- 列表部分 -->
+
+<view class="liebiao" >
+<block wx:for="{{baiyibutie}}" wx:key="id" >
+<view style="  border-bottom: 2rpx solid #000;" bindtap="jumpPage" data-operation="{{baiyibutie}}">
+<image class="liebiaoimage" mode="widthFix" src="{{item.goods_src}}"></image>
+<view class="liebiaotext">{{item.goods_name}}</view>
+<view class="xiaobiaoqian">{{item.goods_discounts}}
+<block>{{item.goods_market}}</block>
+</view>
+<view class="xiaobiaoqian">{{item.goods_price}}
+<block class="butie">{{item.goods_sub}}</block></view>
+
+
+</view>
+</block>
+</view>

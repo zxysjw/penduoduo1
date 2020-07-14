@@ -1,0 +1,116 @@
+/**index.wxss**/
+.swiper{
+  width: 100%;
+}
+image{
+  width: 100%;
+}
+.pinxioaquan{
+  width: 750rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align:center;
+  border-bottom: 2rpx solid #E6E6E6;
+}
+.flex-item{
+  width: calc(750rpx/2);
+}
+.nichengimage{
+  width: 50rpx;
+}
+.gongge{
+  margin-top: 20rpx;
+  width: 100%;
+  /* height: 300rpx; */
+  /* 网格布局 */
+  display: grid;
+  /* 确定宫格每个元素的宽度 将屏幕宽度填满后 然后换行 */
+  grid-template-columns: repeat(auto-fill, 20%);
+
+}
+.gonggeitem{
+  width: 20%;
+}
+.gonggeimage{
+width: calc(750rpx/8);
+margin-left: 30rpx;
+}
+.gonggetext{
+  width: calc(750rpx/8);
+  float: left;
+  font-size: 20rpx; 
+  text-align:center;
+  margin-left: 30rpx;
+  /* font-size: 20rpx; */
+}
+.baiyibutie{
+  border-top: 20rpx solid #E6E6E6;
+}
+.baiyibutietop{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.baiyibutiebiaoti{
+  width: calc(750rpx/4);
+ margin-right: 20rpx;
+ border-right: 1rpx solid #E6E6E6;
+ padding-right: 20rpx;
+ font-weight: bold;
+}
+.baitop{
+  color: #CCCCCC;
+  font-size: 30rpx;
+}
+
+.hezi{
+  
+display: flex;
+/* justify-content: center; */
+flex-direction: row;
+justify-content: center;
+  /* display: grid;
+  /* 确定宫格每个元素的宽度 将屏幕宽度填满后 然后换行 
+  grid-template-columns: repeat(auto-fill, 20%); */
+  margin-top: 20rpx;
+}
+.quanbu{
+  margin-left: 100rpx;
+  color: #CCCCCC;
+}
+.heziitem{
+  flex: 1;
+  margin: 5rpx;
+  width: 20%;
+  margin-left: 20rpx;
+}
+
+.baiyibutietext{
+  font-size: 25rpx;
+  margin-left: 30rpx;
+}
+
+/* 列表部分 */
+.liebiao{
+  border-top: 20rpx solid #E6E6E6;
+  display: flex;
+  flex-direction: column;
+
+}
+.liebiaoimage{
+ width: 40%;
+ padding: 20rpx;
+ float: left;
+}
+.liebiaotext{
+margin: 25rpx;
+font-size: 25rpx;
+}
+.xiaobiaoqian{
+  font-size: 20rpx;
+  color: #E61A1A;
+  margin-top: 50rpx;
+
+}

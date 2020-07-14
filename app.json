@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/dome1/dome1",
+    "pages/guanzhu/index",
+    "pages/fenlei/index",
+    "pages/liaotian/index",
+    "pages/user/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#8EA0E9",
+    "navigationBarTitleText": "拼小圈",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pdd-icon/房子.png",
+      "selectedIconPath": "pdd-icon/房子_1.png"
+    },
+    {
+      "pagePath":  "pages/guanzhu/index",
+      "text": "关注",
+      "iconPath": "/images/b.png",
+      "selectedIconPath": "/images/bb.png"
+    }
+    ,
+    {
+      "pagePath":  "pages/fenlei/index",
+      "text": "分类",
+      "iconPath": "/images/c.png",
+      "selectedIconPath": "/images/cc.png"
+    }
+    ,
+    {
+      "pagePath":"pages/liaotian/index",
+      "text": "聊天",
+      "iconPath": "/images/e.png",
+      "selectedIconPath": "/images/ee.png"
+    }
+    ,
+    {
+      "pagePath": "pages/user/index",
+      "text": "个人中心",
+      "iconPath": "/images/f.png",
+      "selectedIconPath": "/images/ff.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

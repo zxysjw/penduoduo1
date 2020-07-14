@@ -1,0 +1,52 @@
+<!--pages/dome1/dome1.wxml-->
+<!-- 第一部分 请求地址 -->
+
+
+      <button  wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击登录</button>
+     <block wx:else>
+<view class="dizhi">
+<image class="dizhi-image" mode="widthFix" src="../dome1/images/di-zhi.png"></image>
+<view class="dizhi-text">
+<view class="dizhi-text1">
+<text class="dizhi-text1-1">{{userInfo.nickName}}</text>
+<text class="dizhi-text1-2">15531377622</text>
+</view>
+<text class="dizhi-text2">{{userInfo.city}}{{userInfo.province}}{{userInfo.country}}</text>
+</view>
+</view> 
+ </block>
+<!-- 第二部分 购物清单 -->
+<view class="gouwuche">
+<view class="gouwuche-item1">农夫山泉 </view>
+<view class="gouwuche-item2">
+<image class="gouwuche-item2-image" mode="widthFix" src="//imgservice.suning.cn/uimg1/b2c/atmosphere/jpdzpSTjamX8d-XQ90cFXw.jpg?format=_is_300w_300h_4e.webp" ></image>
+<view class="gouwuche-item2-text">
+<text class="gouwuche-item2-text1">农夫山泉 饮用天然水塑膜量贩装550ml*12瓶 饮用水</text>
+<text class="gouwuche-item2-text2">23.9</text>
+</view>
+</view>
+<view class="gouwuche-item3">
+<text class="gouwuche-item3-1">购买数量</text>
+
+<view class="gouwuche-item3-2">
+<button class="gouwuche-item3-btn" bindtap="jia" data-operation="{{1}}">+</button>
+{{list}}
+<button class="gouwuche-item3-btn" bindtap="jia" data-operation="{{-1}}">-</button>
+</view>
+</view>
+</view>
+<!-- 第三部分 微信支付 -->
+<radio-group class="money">
+<radio>微信支付</radio>
+<!-- <radio>支付宝</radio>
+<radio>微信好友支付</radio> -->
+</radio-group>
+
+
+<!-- 第四部分 付款 -->
+<view class="fukuan">
+<view class="jiage">
+实付款： {{shifukuan}}*{{list}}
+</view>
+<button class="zhifu" bindtap="zhifu">立即支付</button>
+</view>

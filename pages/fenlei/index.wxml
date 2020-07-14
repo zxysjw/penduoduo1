@@ -1,0 +1,46 @@
+<!--pages/fenlei/index.wxml-->
+<!-- 第一部分 搜索框 -->
+<input class="search" confirm-type="search" type="text" placeholder="请输入关键字搜索"></input>
+<!-- 第二部分 列表部分 -->
+<view class="liebiao">
+<view class="liebiao-item1">
+<view wx:for="{{left}}" wx:key="id">
+<view class="liebaio-left" hover-class="hover-left" bindtap="active">{{item}}</view>
+</view>
+
+</view>
+<view class="liebiao-item2" >
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+<view class=" liebiao-shangping"><image mode="widthFix" class="liebiao-shangping-image" src="../../images/商品.png"></image></view>
+</view>
+</view>

@@ -1,0 +1,87 @@
+/* pages/guanzhu/index.wxss */
+.top{
+  width: 100%;
+   background-color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-image{
+  margin-top: 20rpx;
+width: 25%;
+
+}
+.top-text{
+  font-size: 30rpx;
+ margin: 20rpx;
+}
+.tuijian{
+  width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ /* background-color: darkgray; */
+  padding: 20rpx;
+}
+.tuijian-image{
+  width: 40rpx;
+  
+}
+.tuijian-text{
+  color: crimson;
+  margin-left: 10rpx;
+}
+.jinxuan{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: darkgray; */
+}
+.jinxuan-item1{
+  width: 100%;
+  height: 100rpx;
+  
+}
+.jinxuan-item1-image{
+  width: 70rpx;
+  margin: 15rpx;
+  float: left;
+}
+.jinxuan-item1-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jinxuan-item1-text1{
+  margin: 10rpx;
+  
+}
+.jinxuan-item1-text2{
+  font-size: 30rpx;
+  color: #CCCCCC;
+  float: left;
+  margin-bottom: 10rpx;
+}
+.btn{
+  width: 100rpx;
+  height: 50rpx;
+  border: solid red;
+  float: right;
+  border-radius: 30rpx;
+  margin-left: 600rpx;
+  text-align: center;
+}
+.jinxuan-item2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25%);
+  border-bottom: 20rpx solid #E6E6E6;
+  margin-top: 20rpx;
+}
+.jinxuan-item2-image{
+ width: calc(750rpx/5);
+ margin-left: 20rpx;
+}

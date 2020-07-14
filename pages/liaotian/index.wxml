@@ -1,0 +1,30 @@
+<!--pages/liaotian/index.wxml-->
+<!-- 第一部分 聊天框 -->
+<view class="liaotian" wx:for="{{liaotian}}" wx:key="id">
+<view class="liaotian-item">
+<image class="liaotian-item-image" mode="widthFix" src="{{item.src}}" ></image>
+<view class="liaotian-item-text">
+<text class="liaotian-item-text1">{{item.name}}</text>
+<text class="liaotian-item-text2">{{item.text}}</text>
+</view>
+</view>
+</view>
+<!-- 第二部分 精选推荐 -->
+<view class="jinxuan">
+<view class="jinxuan-item">
+<image class="jinxuan-item-image" mode="widthFix" src="../../images/jingxuan.png" ></image>
+<view class="jinxuan-item-text">精选推荐</view>
+</view>
+
+<view class="jinxuan-item2" >
+<view class="shangping" wx:for="{{baiyibutie}}" wx:key="id" >
+<image class="jinxuan-item2-image" mode="widthFix" src="{{item.goods_src}}" ></image>
+<view class="jinxuan-item2-text">
+<text class="jinxuan-item2-text1">{{item.goods_price}}</text>
+<text class="jinxuan-item2-text2">{{item.goods_market}}</text>
+</view>
+</view>
+
+</view>
+
+</view>

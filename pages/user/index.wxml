@@ -1,0 +1,138 @@
+<!--pages/user/index.wxml-->
+<!-- 第一部分 -->
+<view class="one">   
+      <view class="xinxi">
+      <button  wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击登录</button>
+     <block wx:else>
+     <image class="touxiang" src="{{userInfo.avatarUrl}}" mode="widthFix"/>
+        <text class="nicheng" style="display:block">{{userInfo.nickName}}</text>
+      <image class="weixin" src="images/weixin.png" />
+      <text class="xunzhang" decode>勋章墙 &nbsp;></text>
+     </block>
+   
+</view>
+<view class="pindanfanxian">
+<image class="pindanfanxian-image" src="images/红包.png" />
+<text class="pindanfanxian-text">拼单返现</text>
+</view>
+<image class="yueka" src="images/截图20200523091530.png"></image>
+ </view>
+<!-- 第二部分 我的订单 -->
+<view class="dindan">
+<view class="dindan-text">
+<text >我的订单</text>
+<text class="dindan-text-2" decode>查看全部&nbsp;></text>
+</view>
+
+<view class="gongge">
+<view wx:for="{{gongju}}" wx:key="id">
+<image src="{{item.order_src}}" mode="widthFix" class="gongge-image"></image>
+<text class="gongge-text">{{item.order_name}}</text>
+</view>
+</view>
+</view>
+
+<!-- 第三部分 优惠售后部分 -->
+
+<view class="shouhou">
+<view class="shouhou-item">
+<image class="shouhou-item-image" src="images/youhui.png" />
+<text class="shouhou-item-text" id="shouhou-item-text1">优惠卷</text>
+</view>
+
+<view class="shouhou-item">
+<image class="shouhou-item-image" src="images/chanpin_huaban1.png" />
+<text class="shouhou-item-text">商品收藏</text>
+</view>
+
+<view class="shouhou-item">
+<image class="shouhou-item-image" src="images/zuji.png" />
+<text class="shouhou-item-text">历史浏览</text>
+</view>
+
+<view class="shouhou-item">
+<image class="shouhou-item-image" src="images/tuipiao1.png" />
+<text class="shouhou-item-text">退款售后</text>
+</view>
+
+<view class="shouhou-item">
+<image class="shouhou-item-image" src="images/my pingjia.png" />
+<text class="shouhou-item-text">我的评价</text>
+</view>
+
+</view>
+<!-- 第四部分 多多活动 -->
+<view class="duoduohuodong">
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/shu.png" />
+<text class="duoduohuodong-item-text">多多果园</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/fuzi.png" />
+<text class="duoduohuodong-item-text">砍价免费拿</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/timg.jpg" />
+<text class="duoduohuodong-item-text">天天领现金</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/moshubang.png" />
+<text class="duoduohuodong-item-text">多多爱消除</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/muchang.png" />
+<text class="duoduohuodong-item-text">多多牧场</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/shipin.png" />
+<text class="duoduohuodong-item-text">多多视频</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/huoche.png" />
+<text class="duoduohuodong-item-text" id="duoduohuodong-item-text-huoche">火车票</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/shouhuodizhi.png" />
+<text class="duoduohuodong-item-text">收获地址</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/kefu.png" />
+<text class="duoduohuodong-item-text">官方客服</text>
+</view>
+
+<view class="duoduohuodong-item">
+<image class="duoduohuodong-item-image" src="images/shezhi.png" />
+<text class="duoduohuodong-item-text" id="duoduohuodong-item-text-shezhi">设置</text>
+</view>
+
+</view>
+
+<!-- 第五部分 图片 -->
+<view class="tupian">
+<image class="tupian-image" src="images/5.png" mode="widthFix" />
+</view>
+
+<!-- 第六部分 精品推荐 -->
+<view class="jinping">
+<view class="jinping-item">
+<image class="jinping-item-image" src="images/13.png" />
+<text class="jinping-item-text" >精品推荐</text>
+</view>
+<view class="jinping-item2" >
+<block wx:for="{{baiyibutie}}" wx:key="id">
+<view class="jinping-item2-view" bindtap="jumpPage">
+<image src="{{item.goods_src}}" class="jinping-item2-image" mode="widthFix"></image>
+<text class="jinping-item2-text">{{item.goods_name}}</text>
+<text class="jinping-item2-text2">{{item.goods_price}}</text>
+</view>
+</block>
+</view>
+</view>

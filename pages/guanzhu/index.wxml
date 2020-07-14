@@ -1,0 +1,59 @@
+<!--pages/guanzhu/index.wxml-->
+<!-- 第一部分 顶部大图 -->
+<view class="top">
+<image mode="widthFix" class="top-image" src="../../images/followss.png"></image>
+<text class="top-text">暂无关注店铺</text>
+</view>
+
+<!-- 第二部分 推荐店铺 -->
+<view class="tuijian">
+<image class="tuijian-image" src="../../images/jingxuan.png" mode="widthFix"></image>
+<text class="tuijian-text">推荐店铺</text>
+</view>
+
+<!-- 第三部分 列表部分 -->
+<view class="jinxuan">
+<view class="jinxuan-item1">
+<image class="jinxuan-item1-image" src="../../images/限时秒杀.png" mode="widthFix"></image>
+<view class="jinxuan-item1-text">
+<text class="jinxuan-item1-text1">限时秒杀专卖店</text>
+<view class="jinxuan-item1-text2">已拼132件 丨 关注：599 </view>
+</view>
+</view>
+<view class="btn">关注</view>
+<view class="jinxuan-item2">
+<block  wx:for="{{baiyibutie}}" wx:key="id">
+<image class="jinxuan-item2-image" src="{{item.goods_src}}" mode="widthFix"></image>
+</block>
+</view>
+
+<view class="jinxuan-item1">
+<image class="jinxuan-item1-image" src="../../images/花.png" mode="widthFix"></image>
+<view class="jinxuan-item1-text">
+<text class="jinxuan-item1-text1">心想事成杂货铺</text>
+<view class="jinxuan-item1-text2">已拼110件 丨 关注：269</view>
+</view>
+</view>
+<view class="btn">关注</view>
+<view class="jinxuan-item2">
+<block  wx:for="{{baiyibutie}}" wx:key="id">
+<image class="jinxuan-item2-image" src="{{item.goods_src}}" mode="widthFix"></image>
+</block>
+</view>
+
+<view class="jinxuan-item1">
+<image class="jinxuan-item1-image" src="../../images/钱袋.png" mode="widthFix"></image>
+<view class="jinxuan-item1-text">
+<text class="jinxuan-item1-text1">省钱大王</text>
+<view class="jinxuan-item1-text2">已拼655件 丨 关注：653 </view>
+</view>
+</view>
+<view class="btn">关注</view>
+<view class="jinxuan-item2">
+<block  wx:for="{{baiyibutie}}" wx:key="id">
+<image class="jinxuan-item2-image" src="{{item.goods_src}}" mode="widthFix"></image>
+</block>
+</view>
+
+
+</view>
